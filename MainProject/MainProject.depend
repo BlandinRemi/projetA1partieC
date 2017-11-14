@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1510662742 source:e:\codeblocks\projet github\projeta1partiec\cpartcode\gencod.c
+	<stdio.h>
+	<stdlib.h>
+	"GENCOD.H"
+
+1510661824 e:\codeblocks\projet github\projeta1partiec\cpartcode\gencod.h
+	<stdio.h>
+	<stdlib.h>
+
+1510659626 source:e:\codeblocks\projet github\projeta1partiec\cpartcode\menuloader.c
+	"menuLoader.h"
+
+1510662904 e:\codeblocks\projet github\projeta1partiec\cpartcode\menuloader.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1510666024 source:e:\codeblocks\projet github\projeta1partiec\mainproject\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1510663894 source:e:\codeblocks\projet github\projeta1partiec\mainproject\submain.c
+	"subMain.h"
+
+1510659626 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menuloader.c
+	"menuLoader.h"
+
+1510664338 e:\codeblocks\projet github\projeta1partiec\mainproject\menuloader.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1510663452 source:e:\codeblocks\projet github\projeta1partiec\mainproject\gencod.c
+	"GENCOD.H"
+
+1510661824 e:\codeblocks\projet github\projeta1partiec\mainproject\gencod.h
+	<stdio.h>
+	<stdlib.h>
+
+1510663492 e:\codeblocks\projet github\projeta1partiec\mainproject\submain.h
+	<stdio.h>
+	<stdlib.h>
+
+1510665954 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menuled.c
+	"menuLED.h"
+
+1510666046 source:e:\codeblocks\projet github\projeta1partiec\mainproject\secondary.c
+	"menuLED.h"
+	"fileGenerator.h"
+
+1510666384 source:e:\codeblocks\projet github\projeta1partiec\mainproject\filegenerator.c
+	"fileGenerator.h"
+
+1510666384 e:\codeblocks\projet github\projeta1partiec\mainproject\filegenerator.h
+	<stdio.h>
+	<stdlib.h>
+
+1510678724 e:\codeblocks\projet github\projeta1partiec\mainproject\menuled.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1510668868 source:e:\codeblocks\projet github\projeta1partiec\mainproject\data.c
+	"data.h"
+
+1510669390 e:\codeblocks\projet github\projeta1partiec\mainproject\data.h
+
+1510678416 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menug.c
+	"MENUG.H"
+
+1510677134 e:\codeblocks\projet github\projeta1partiec\mainproject\menug.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
