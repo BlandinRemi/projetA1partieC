@@ -35,20 +35,24 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="data.h" />
-		<Unit filename="fileGenerator.c">
+		<Unit filename="filegenerator.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="fileGenerator.h" />
+		<Unit filename="filegenerator.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="menuLED.c">
+		<Unit filename="menus.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="menuLED.h" />
+		<Unit filename="menus.h" />
 		<Unit filename="secondary.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="treatment.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="treatment.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

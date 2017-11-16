@@ -16,7 +16,7 @@
 	<stdlib.h>
 	<string.h>
 
-1510666024 source:e:\codeblocks\projet github\projeta1partiec\mainproject\main.c
+1510753166 source:e:\codeblocks\projet github\projeta1partiec\mainproject\main.c
 	<stdio.h>
 	<stdlib.h>
 
@@ -42,35 +42,51 @@
 	<stdio.h>
 	<stdlib.h>
 
-1510665954 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menuled.c
-	"menuLED.h"
+1510738202 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menuled.c
+	"menuled.h"
 
-1510666046 source:e:\codeblocks\projet github\projeta1partiec\mainproject\secondary.c
-	"menuLED.h"
-	"fileGenerator.h"
+1510761378 source:e:\codeblocks\projet github\projeta1partiec\mainproject\secondary.c
+	"menus.h"
+	"filegenerator.h"
+	"data.h"
 
-1510666384 source:e:\codeblocks\projet github\projeta1partiec\mainproject\filegenerator.c
-	"fileGenerator.h"
+1510741974 source:e:\codeblocks\projet github\projeta1partiec\mainproject\filegenerator.c
+	"filegenerator.h"
 
 1510666384 e:\codeblocks\projet github\projeta1partiec\mainproject\filegenerator.h
 	<stdio.h>
 	<stdlib.h>
 
-1510678724 e:\codeblocks\projet github\projeta1partiec\mainproject\menuled.h
+1510736958 e:\codeblocks\projet github\projeta1partiec\mainproject\menuled.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1510668868 source:e:\codeblocks\projet github\projeta1partiec\mainproject\data.c
+1510754184 source:e:\codeblocks\projet github\projeta1partiec\mainproject\data.c
 	"data.h"
 
-1510669390 e:\codeblocks\projet github\projeta1partiec\mainproject\data.h
+1510754006 e:\codeblocks\projet github\projeta1partiec\mainproject\data.h
+	<stdio.h>
+	<stdlib.h>
 
-1510678416 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menug.c
+1510731434 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menug.c
 	"MENUG.H"
 
 1510677134 e:\codeblocks\projet github\projeta1partiec\mainproject\menug.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+
+1510761876 e:\codeblocks\projet github\projeta1partiec\mainproject\menus.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1510764396 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menus.c
+	"menus.h"
+
+1510744872 source:e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.c
+	"treatment.h"
+
+1510744798 e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.h
 

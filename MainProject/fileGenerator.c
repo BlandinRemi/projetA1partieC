@@ -1,11 +1,11 @@
-#include "fileGenerator.h"
+#include "filegenerator.h"
 
 void paramFileCreator() {
   fileptr = fopen("param.h","w");
   if (fileptr != 0) {
     fclose(fileptr);
   } else {
-    printf("wasn't able to create the file.");
+    printf("unable to create the file.");
   }
 }
 
@@ -15,7 +15,7 @@ void paramFileInitialize() {
     fprintf(fileptr,"#ifndef param_h\n");
     fprintf(fileptr,"#define param_h\n");
     fprintf(fileptr,"#include %carduino.h%c\n",QuoteMark,QuoteMark);
-    fprintf(fileptr,"#define ChoiceValue x\n");
+    fprintf(fileptr,"#define choiceValue x\n");
     fprintf(fileptr,"#endif // param_h\n");
     fclose(fileptr);
   } else {
