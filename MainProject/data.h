@@ -10,10 +10,10 @@ struct HeartBeat {
   HeartBeat *next;
 };
 
+HeartBeat *listData;
 FILE*fileptr;
 
-void menuTreatment(int treatmentValue);
-HeartBeat *createPackData(int newmstime,int newbpm);
+HeartBeat *createData(int newmstime,int newbpm);
 void stackData(HeartBeat **firstptr,HeartBeat *newptr);
-void readCsvFile();
+HeartBeat *readCsvFile();
 #endif // DATA_H_INCLUDED

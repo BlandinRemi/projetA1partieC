@@ -16,9 +16,13 @@
 	<stdlib.h>
 	<string.h>
 
-1510753166 source:e:\codeblocks\projet github\projeta1partiec\mainproject\main.c
+1511099120 source:e:\codeblocks\projet github\projeta1partiec\mainproject\main.c
 	<stdio.h>
 	<stdlib.h>
+	"menus.h"
+	"filegenerator.h"
+	"data.h"
+	"treatment.h"
 
 1510663894 source:e:\codeblocks\projet github\projeta1partiec\mainproject\submain.c
 	"subMain.h"
@@ -45,12 +49,13 @@
 1510738202 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menuled.c
 	"menuled.h"
 
-1510761378 source:e:\codeblocks\projet github\projeta1partiec\mainproject\secondary.c
+1511112796 source:e:\codeblocks\projet github\projeta1partiec\mainproject\secondary.c
 	"menus.h"
 	"filegenerator.h"
 	"data.h"
+	"treatment.h"
 
-1510741974 source:e:\codeblocks\projet github\projeta1partiec\mainproject\filegenerator.c
+1510822106 source:e:\codeblocks\projet github\projeta1partiec\mainproject\filegenerator.c
 	"filegenerator.h"
 
 1510666384 e:\codeblocks\projet github\projeta1partiec\mainproject\filegenerator.h
@@ -62,10 +67,10 @@
 	<stdlib.h>
 	<string.h>
 
-1510754184 source:e:\codeblocks\projet github\projeta1partiec\mainproject\data.c
+1511098920 source:e:\codeblocks\projet github\projeta1partiec\mainproject\data.c
 	"data.h"
 
-1510754006 e:\codeblocks\projet github\projeta1partiec\mainproject\data.h
+1511099108 e:\codeblocks\projet github\projeta1partiec\mainproject\data.h
 	<stdio.h>
 	<stdlib.h>
 
@@ -85,8 +90,9 @@
 1510764396 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menus.c
 	"menus.h"
 
-1510744872 source:e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.c
+1511114048 source:e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.c
 	"treatment.h"
 
-1510744798 e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.h
+1511114102 e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.h
+	"data.h"
 

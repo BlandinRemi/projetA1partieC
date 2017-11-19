@@ -1,5 +1,5 @@
 #ifndef param_h
 #define param_h
 #include "arduino.h"
-#define choiceValue 3
+#define choiceValue x
 #endif // param_h
