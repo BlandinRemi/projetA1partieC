@@ -16,7 +16,7 @@
 	<stdlib.h>
 	<string.h>
 
-1511099120 source:e:\codeblocks\projet github\projeta1partiec\mainproject\main.c
+1511174112 source:e:\codeblocks\projet github\projeta1partiec\mainproject\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menus.h"
@@ -49,7 +49,7 @@
 1510738202 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menuled.c
 	"menuled.h"
 
-1511112796 source:e:\codeblocks\projet github\projeta1partiec\mainproject\secondary.c
+1511190352 source:e:\codeblocks\projet github\projeta1partiec\mainproject\secondary.c
 	"menus.h"
 	"filegenerator.h"
 	"data.h"
@@ -90,9 +90,12 @@
 1510764396 source:e:\codeblocks\projet github\projeta1partiec\mainproject\menus.c
 	"menus.h"
 
-1511114048 source:e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.c
+1511190150 source:e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.c
 	"treatment.h"
 
-1511114102 e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.h
+1511190388 e:\codeblocks\projet github\projeta1partiec\mainproject\treatment.h
+	<stdio.h>
+	<stdlib.h>
 	"data.h"
+	"menus.h"
 

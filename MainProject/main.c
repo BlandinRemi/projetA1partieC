@@ -5,8 +5,7 @@
 #include "data.h"
 #include "treatment.h"
 
-int main()
-{
+int main() {
   menuTest();
   return 0;
 }

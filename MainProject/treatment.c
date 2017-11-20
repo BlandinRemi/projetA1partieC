@@ -1,100 +1,117 @@
 #include "treatment.h"
 
-
-void printData() {
+int countValue(int counter) {
   HeartBeat *temp=listData;
   while (temp!=0) {
-    printf("temps en ms:%d/pouls en bpm:%d\n",temp->msTime,temp->bpm);
+    counter++;
     temp=temp->next;
+  }
+  return counter;
+}
+
+void convertInTable(HeartBeat *tableData,int counter) {
+  int i;
+  for (i=0;i<counter;i++) {
+    tableData[i].msTime = listData->msTime;
+    tableData[i].bpm = listData->bpm;
+    listData=listData->next;
   }
 }
 
-void fusion(int tableau[],int deb1,int fin1,int fin2)
-        {
-        int *table1;
-        int deb2=fin1+1;
-        int compt1=deb1;
-        int compt2=deb2;
-        int i;
+void printTable(HeartBeat *tableData,int counter) {
+  int i;
+  for (i=0;i<counter;i++) {
+  printf("temps en ms:%d/pouls en bpm:%d\n",tableData[i].msTime,tableData[i].bpm);
+  }
+}
 
-        table1=malloc((fin1-deb1+1)*sizeof(int));
+void seekbpm(HeartBeat *tableData,int counter,int choiceTime) {
+  int i=0;
+  while (tableData[i].msTime!=choiceTime) {
+    i++;
+  }
+  printf("pouls associ%c:%d",130,tableData[i].bpm);
+}
 
-        //on recopie les éléments du début du tableau
-        for(i=deb1;i<=fin1;i++)
-            {
-            table1[i-deb1]=tableau[i];
-            }
+void insertSortincreasebpm(HeartBeat *tableData,int counter) {
+  int i, tempValue1, tempValue2, countDown, marker;
+  for(i=1;i<counter;i++) {
+    tempValue1=tableData[i].bpm;
+    tempValue2=tableData[i].msTime;
+    countDown=i-1;
+    do {
+      marker=0;
+      if (tableData[countDown].bpm>tempValue1) {
+        tableData[countDown+1].bpm=tableData[countDown].bpm;
+        tableData[countDown+1].msTime=tableData[countDown].msTime;
+        tableData[countDown].bpm=tempValue1;
+        tableData[countDown].msTime=tempValue2;
+        countDown--;
+        marker=1;
+      }
+      if (countDown<0) {
+        marker=0;
+      }
+    }
+    while(marker!=0);
+  tableData[countDown+1].bpm=tempValue1;
+  tableData[countDown+1].msTime=tempValue2;
+  }
+  for(i=0;i<counter;i++) {
+    printf("temps en ms:%d/pouls en bpm:%d\n",tableData[i].bpm,tableData[i].msTime);
+  }
+}
 
-        for(i=deb1;i<=fin2;i++)
-            {
-            if (compt1==deb2) //c'est que tous les éléments du premier tableau ont été utilisés
-                {
-                break; //tous les éléments ont donc été classés
-                }
-            else if (compt2==(fin2+1)) //c'est que tous les éléments du second tableau ont été utilisés
-                {
-                tableau[i]=table1[compt1-deb1]; //on ajoute les éléments restants du premier tableau
-                compt1++;
-                }
-            else if (table1[compt1-deb1]<tableau[compt2])
-                {
-                tableau[i]=table1[compt1-deb1]; //on ajoute un élément du premier tableau
-                compt1++;
-                }
-            else
-                {
-                tableau[i]=tableau[compt2]; //on ajoute un élément du second tableau
-                compt2++;
-                }
-            }
-        free(table1);
-        }
-
-
-void tri_fusion_bis(int tableau[],int deb,int fin)
-        {
-        if (deb!=fin)
-            {
-            int milieu=(fin+deb)/2;
-            tri_fusion_bis(tableau,deb,milieu);
-            tri_fusion_bis(tableau,milieu+1,fin);
-            fusion(tableau,deb,milieu,fin);
-            }
-        }
-
-void tri_fusion(int tableau[],int longueur)
-     {
-     if (longueur>0)
-            {
-            tri_fusion_bis(tableau,0,longueur-1);
-            }
-     }
-
-void menuTreatment(int treatmentValue) {
+void menuTreatment(int treatmentValue,HeartBeat *tableData) {
+  int choiceValue;
+  int counter=countValue(count1);
   switch(treatmentValue) {
     case 1:{
-      printData();
-    }
-    case 2:{
+      printTable(tableData, counter);
+      break;
+    } case 2:{
+      printRectangleNum(1,66,2,"choississez entre l'affichage croissant(1) et d%ccroissant(2).",130);
+      printf("choix:");
+      scanf("%d",&choiceValue);
 
-    }
-    case 3:{
+      if (choiceValue==1) {
+        printRectangleText(1,50,2,"choississez entre le pouls(1) et le temps(2).");
+        printf("choix:");
+        scanf("%d",&choiceValue);
 
-    }
-    case 4:{
+        if (choiceValue==1) {
+          printRectangleText(1,50,2,"1:affichage croissant en fonction du pouls.");
+          insertSortincreasebpm(tableData, counter);
+        } else {
+          printRectangleText(1,50,2,"2:affichage croissant en fonction du temps.");
 
-    }
-    case 5:{
+        }
 
-    }
-    case 6:{
+      } else {
+        printRectangleText(1,50,2,"choississez entre le pouls(1) et le temps(2).");
+        printf("choix:");
+        scanf("%d",&choiceValue);
 
-    }
-    case 7:{
-
-    }
-    case 8:{
-
+        if (choiceValue==1) {
+          printRectangleNum(1,56,2,"1:affichage d%ccroissant en fonction du pouls.",130);
+        } else {
+          printRectangleNum(1,50,2,"2:affichage d%ccroissant en fonction du temps.",130);
+        }
+      }
+      break;
+    } case 3:{
+      printf("valeur de temps recherch%c(en ms):",130);
+      scanf("%d",&choiceTime);
+      seekbpm(tableData, counter, choiceTime);
+      break;
+    } case 4:{
+      break;
+    } case 5:{
+      break;
+    } case 6:{
+      break;
+    } case 7:{
+      break;
     }
   }
 }

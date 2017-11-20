@@ -1,14 +1,21 @@
 #ifndef TREATMENT_H_INCLUDED
 #define TREATMENT_H_INCLUDED
+#include <stdio.h>
+#include <stdlib.h>
 #include "data.h"
+#include "menus.h"
+#define TableLength 50
 
-void menuTreatment(int treatmentValue);
-void printData();
-int data;
-int tableData[0];
-void convertInTable(int tableData);
-void fusion(int tableau[],int deb1,int fin1,int fin2);
-void tri_fusion_bis(int tableau[],int deb,int fin);
-void tri_fusion(int tableau[],int longueur);
+int count1;
+int choiceTime;
+HeartBeat *tableData;
+
+void menuTreatment(int treatmentValue,HeartBeat *tableData);
+int countValue(int counter);
+void convertInTable(HeartBeat *tableData,int counter);
+void printTable(HeartBeat *tableData, int counter);
+void insertincreaseSortbpm(HeartBeat *tableData,int counter);
+void seekbpm(HeartBeat *tableData,int counter, int choiceTime);
+
 
 #endif // TREATMENT_H_INCLUDED
