@@ -50,3 +50,15 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+CpartCode/exportfiletest/exportfiletest.cbp
+CpartCode/exportfiletest/exportfiletest.depend
+CpartCode/exportfiletest/exportfiletest.layout
+CpartCode/param.dat
+CpartCode/param.h
+first-test/main.c
+first-test/first-test.layout
+first-test/first-test.cbp
+first-test/first-test.depend
+CpartCode/exportfiletest/main.c
+first-test/GENCOD.H
+first-test/GENCOD.C
